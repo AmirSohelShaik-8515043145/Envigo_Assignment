@@ -1,0 +1,180 @@
+{
+	"info": {
+		"_postman_id": "db5cfba5-277c-40b1-9e44-b8637ef2e84e",
+		"name": "Envigo Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20042212"
+	},
+	"item": [
+		{
+			"name": "Sign Up",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstName",
+							"value": "Amir Sohel",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Shaik",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "amirsohelsk07@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "8515043145",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Sohel@02",
+							"type": "text"
+						},
+						{
+							"key": "profileImage",
+							"type": "file",
+							"src": "/C:/Users/Amir Shohel/Documents/1650752961299.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/signup",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sign in",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "amirsohelsk07@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "Sohel@02",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/signin",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "tokenkey",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmU2NjBkN2Q0MTliYWNkYzI4MWJhMDkiLCJpYXQiOjE2NTkyNjUyNDUsImV4cCI6MTY1OTI3MjQ0NX0.4YjbBvAB3bieYQvwjQOeoAO1gxpQC5iMRPwLKJofAxY",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "firstName",
+							"value": "Amir Sohel",
+							"type": "text"
+						},
+						{
+							"key": "lastName",
+							"value": "Sk                      ",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "email",
+							"value": "amirsohelsk07@gmail.com",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "password",
+							"value": "Abcd@123",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "profileImage",
+							"type": "file",
+							"src": "/C:/Users/Amir Shohel/Documents/1650752961328.jpg",
+							"disabled": true
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:3000/user/62e660d7d419bacdc281ba09",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"62e660d7d419bacdc281ba09"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User Details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "tokenkey",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MmU2NjBkN2Q0MTliYWNkYzI4MWJhMDkiLCJpYXQiOjE2NTkyNjUyNDUsImV4cCI6MTY1OTI3MjQ0NX0.4YjbBvAB3bieYQvwjQOeoAO1gxpQC5iMRPwLKJofAxY",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:3000/user/62e660d7d419bacdc281ba09",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"62e660d7d419bacdc281ba09"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
